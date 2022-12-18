@@ -102,6 +102,3 @@ jobs:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
           message: ${{ github.workflow }} успешно выполнен!
-          message: |
-            Ошибка при сборке/отправке образа на DockerHub  - ${{ github.repository }}
-            https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
