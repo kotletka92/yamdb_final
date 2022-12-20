@@ -78,7 +78,7 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         passphrase: ${{ secrets.PASSPHRASE }}
         script: |
-          pwd home/popka92/
+          cd popka92
           sudo docker pull ${{ secrets.DOCKER_USERNAME }}/api_yamdb:latest
           sudo docker-compose stop
           sudo docker-compose rm web
